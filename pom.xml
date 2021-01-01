@@ -3,14 +3,33 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <version>1.5.18.RELEASE</version>
+    </parent>
+
 
     <groupId>com.imooc</groupId>
     <artifactId>distributed</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>distributed-id</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+    <dependencies>
+
+<!--        <dependency>-->
+<!--            <artifactId>leaf-boot-starter</artifactId>-->
+<!--            <groupId>com.sankuai.inf.leaf</groupId>-->
+<!--            <version>1.0.1-RELEASE</version>-->
+<!--        </dependency>-->
+    </dependencies>
 
 </project>
